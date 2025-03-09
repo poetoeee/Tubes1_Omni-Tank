@@ -1,0 +1,10 @@
+{
+  "name": "Invincible",
+  "version": "1.0",
+  "authors": ["Ferdin"],
+  "description": "An Invincible robot that combine spin and ram attack type, still losing against wall and ram-fire typed robot",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 6.0",
+  "programmingLang": "C# 10.0"
+}
