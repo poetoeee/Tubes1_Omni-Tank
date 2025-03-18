@@ -5,71 +5,57 @@ using Robocode.TankRoyale.BotApi.Events;
 
 public class Cobaa : Bot
 {
-    // bool isAttacking = false;
-    // int lastScannedTurn = 0;
-    // double moveDirection = 1;
-    // bool reachedWall = false;
+    bool peek;
+    double moveAmount; 
     int turnDirection = 1;
-    int dist = 50;
 
-    static void Main(string[] args)
+    static void Main()
     {
         new Cobaa().Start();
     }
+
     Cobaa() : base(BotInfo.FromFile("Cobaa.json")) { }
 
     public override void Run()
     {
-        // Set colors
-        BodyColor = Color.FromArgb(255, 255, 255);  
-        TurretColor = Color.FromArgb(255, 255, 255); 
-        RadarColor = Color.FromArgb(255, 255, 255); 
+        BodyColor = Color.White;
+        TurretColor = Color.White;
+        RadarColor = Color.White;
+        BulletColor = Color.Black;
+        ScanColor = Color.White;
+
+        moveAmount = Math.Max(ArenaWidth, ArenaHeight);
+        peek = false;
+
+        TurnRight(Direction % 90);
+        Forward(moveAmount);
+
+        peek = true;
+        TurnGunRight(90);
+        TurnRight(90);
 
         while (IsRunning)
         {
-            TurnLeft(5 * turnDirection);
+            // TurnLeft(5 * turnDirection);
+            peek = true;
+            // Forward(moveAmount);
+            peek = false;
+            // TurnRight(185);
+            TurnGunRight(180);
         }
-    }
-
-    public override void OnScannedBot(ScannedBotEvent e)
-    {
-        TurnToFaceTarget(e.X, e.Y);
-        var distance = DistanceTo(e.X, e.Y);
-        if (distance < 100){
-            Forward(distance + 5);
-        }else{
-            Fire(1);
-        }
-
-        Rescan(); 
-    }
-
-    public override void OnHitByBullet(HitByBulletEvent e)
-    {
-        TurnLeft(NormalizeRelativeAngle(90 - (Direction - e.Bullet.Direction)));
-
-        Forward(dist);
-        dist *= -1; 
-
-        Rescan();
     }
 
     public override void OnHitBot(HitBotEvent e)
-    {
-        TurnToFaceTarget(e.X, e.Y);
+    { 
+        // TurnToFaceTarget(e.X, e.Y);
 
-        if (e.Energy > 16)
-            Fire(3);
-        else if (e.Energy > 10)
-            Fire(2);
-        else if (e.Energy > 4)
-            Fire(1);
-        else if (e.Energy > 2)
-            Fire(.5);
-        else if (e.Energy > .4)
-            Fire(.1);
+        // if (e.Energy > 30)
+        //     Fire(3);
+        // else Fire(2);
 
-        Forward(40); 
+        // Fire(3);
+
+        // Forward(40); 
     }
 
     private void TurnToFaceTarget(double x, double y)
@@ -80,6 +66,27 @@ public class Cobaa : Bot
         else
             turnDirection = -1;
 
-        TurnLeft(bearing);
+        TurnGunLeft(bearing);
+    }
+
+    // We scanned another bot -> fire!
+    public override void OnScannedBot(ScannedBotEvent e)
+    {
+        var distance = DistanceTo(e.X, e.Y);
+        if (distance < 75){
+            Fire(5);
+            if (distance < 10){
+                Forward(10);
+                Back(10);
+            }
+        }else if (distance < 125){
+            Fire(4);
+        }else if (distance < 200){
+            Fire(3);
+        }else{
+            Fire(2);
+        }
+        
+        Rescan();
     }
 }
