@@ -77,6 +77,7 @@ public class Coba2 : Bot
             isRamMode = true;
             
             TurnToFaceTarget(e.X, e.Y);
+            TurnGunLeft(GunBearingTo(e.X, e.Y));
             Forward(distance + 5);
         }
         else if (distance < 100) {

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cobaa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1b15bc74b64586e21b6c438ba005dcc9a2a2d38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+166078f78acd0687ab0e7f092f3c604f42309bfd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cobaa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cobaa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

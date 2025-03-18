@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dzsupfEiWQY=",
+  "dgSpecHash": "VZTJrJidc4o=",
   "success": true,
-  "projectFilePath": "C:\\Per-Kuliahan\\Semester_4\\STIMA\\TUBES-1\\tubes1-if2211-starter-pack-1.0\\tubes1-if2211-starter-pack-1.0\\sample-bots-csharp-0.30.0\\Coba2\\Coba2.csproj",
+  "projectFilePath": "C:\\Per-Kuliahan\\Semester_4\\STIMA\\TUBES-1\\Tubes1_Omni-Tank\\src\\Coba2\\Coba2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

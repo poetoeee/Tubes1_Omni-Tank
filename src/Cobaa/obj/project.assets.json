@@ -824,11 +824,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Per-Kuliahan\\Semester_4\\STIMA\\TUBES-1\\tubes1-if2211-starter-pack-1.0\\tubes1-if2211-starter-pack-1.0\\sample-bots-csharp-0.30.0\\Cobaa\\Cobaa.csproj",
+      "projectUniqueName": "C:\\Per-Kuliahan\\Semester_4\\STIMA\\TUBES-1\\Tubes1_Omni-Tank\\src\\Cobaa\\Cobaa.csproj",
       "projectName": "Cobaa",
-      "projectPath": "C:\\Per-Kuliahan\\Semester_4\\STIMA\\TUBES-1\\tubes1-if2211-starter-pack-1.0\\tubes1-if2211-starter-pack-1.0\\sample-bots-csharp-0.30.0\\Cobaa\\Cobaa.csproj",
+      "projectPath": "C:\\Per-Kuliahan\\Semester_4\\STIMA\\TUBES-1\\Tubes1_Omni-Tank\\src\\Cobaa\\Cobaa.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Per-Kuliahan\\Semester_4\\STIMA\\TUBES-1\\tubes1-if2211-starter-pack-1.0\\tubes1-if2211-starter-pack-1.0\\sample-bots-csharp-0.30.0\\Cobaa\\obj\\",
+      "outputPath": "C:\\Per-Kuliahan\\Semester_4\\STIMA\\TUBES-1\\Tubes1_Omni-Tank\\src\\Cobaa\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
