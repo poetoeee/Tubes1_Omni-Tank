@@ -5,6 +5,6 @@
   "description": "Sigma Sigma Bot Sigma Bot Sigma Bot",
   "homepage": "",
   "countryCodes": ["id"],
-  "platform": ".Net 9.0",
+  "platform": ".Net 6.0",
   "programmingLang": "C# 10.0"
 }
