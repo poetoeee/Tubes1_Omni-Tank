@@ -37,7 +37,7 @@ public class Invincible : Bot
         double distance = DistanceTo(e.X, e.Y);
         double firePower = DetermineFirePower(distance);
         
-        if (distance <= 30){
+        if (distance <= 50){
             Fire(firePower);
             TurnToFaceTarget(e.X, e.Y);
             Forward(distance+40);
@@ -128,6 +128,6 @@ public class Invincible : Bot
         }
 
         // **Jika energi hampir habis, sangat defensif**
-        return 0; // Tidak menembak untuk menghindari eliminasi cepat
+        return 1; // Tidak menembak untuk menghindari eliminasi cepat
     }
 }
