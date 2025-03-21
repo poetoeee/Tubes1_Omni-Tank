@@ -24,15 +24,21 @@ public class Cobaa : Bot
         BulletColor = Color.Black;
         ScanColor = Color.White;
 
+        AdjustGunForBodyTurn = true;
+        AdjustRadarForBodyTurn = true;
+        AdjustRadarForGunTurn  = true;
 
+        moveAmount = Math.Max(ArenaWidth, ArenaHeight);
+        TurnRight(Direction % 90);
+        Forward(moveAmount);
+        TurnRight(90);
         while (IsRunning)
         {
-            TurnRadarRight(360);
-            Forward(40);
-            TurnRight(40);
-            Forward(40);
-            TurnRight(40);
-            Back(80);
+            SetTurnRadarRight(360);
+            SetForward(40);
+            SetTurnRight(40);
+            SetForward(20);
+            Go();
 
         }
     }
@@ -51,13 +57,18 @@ public class Cobaa : Bot
     public override void OnHitBot(HitBotEvent e)
     { 
         TurnToFaceTarget(e.X, e.Y);
-        Fire(5);
+        Fire(3);
         Forward(30);
     }
 
     public override void OnScannedBot(ScannedBotEvent e)
     {
         TurnGunLeft(GunBearingTo(e.X, e.Y));
-        Fire(3);
+        var distance = DistanceTo(e.X, e.Y);
+        if (distance < 500){
+            Fire(3);
+        }else{
+            Fire(2);
+        }
     }
 }
