@@ -8,7 +8,7 @@ public class Coba2 : Bot
     double lastEnemyX, lastEnemyY;
     double lastEnemyVelocity;
     double lastEnemyDistance = 0;
-    // int movementDirection = 1; 
+    int movementDirection = 1; 
 
     static void Main()
     {
