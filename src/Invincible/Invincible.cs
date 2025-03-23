@@ -16,19 +16,26 @@ public class Invincible : Bot
     
     public override void Run()
     {
-        BodyColor = Color.Yellow;
-        TurretColor = Color.Blue;
-        RadarColor = Color.Black;
-        BulletColor = Color.Yellow;
-        ScanColor = Color.Blue;
+        BodyColor = Color.Black;
+        TurretColor = Color.DarkBlue;
+        RadarColor = Color.Blue;
+        BulletColor = Color.Blue;
+        ScanColor = Color.LightBlue;
         
         movingForward = true;
         
         while (IsRunning)
         {
-            SetTurnRight(5000);
-            MaxSpeed = 5;
-            Forward(10000);
+            if (IsNearWall(20))
+            {
+                AvoidWall();
+            }
+            else
+            {
+                SetTurnRight(5000);
+                MaxSpeed = 5;
+                Forward(10000);
+            }
         }
     }
     
@@ -40,20 +47,27 @@ public class Invincible : Bot
         if (distance <= 50){
             Fire(firePower);
             TurnToFaceTarget(e.X, e.Y);
-            Forward(distance+40);
+            Fire(firePower);
+            Forward(distance+5);
         }
         else if (distance <= 100)
         {
             Fire(firePower);
+            TurnToFaceTarget(e.X, e.Y);
+            Forward(distance*0.5);
         }
-        else if (distance <= 500)
+        else if (distance <= 800)
         {
             Fire(firePower);
+            TurnToFaceTarget(e.X, e.Y);
+            Forward(distance*0.3);
         }
         else
         {
-            Forward(distance - 500);
             Fire(firePower);
+            TurnToFaceTarget(e.X, e.Y);
+            Fire(firePower);
+            Forward(distance*0.2);
         }
     }
     
@@ -101,33 +115,38 @@ public class Invincible : Bot
     }
     private double DetermineFirePower(double distance)
     {
-        // **Jika energi bot di atas 50, gunakan strategi normal**
-        if (Energy > 40)
+        if (Energy > 60)
         {
-            if (distance <= 50) return 5;
-            if (distance <= 100) return 3;
-            if (distance <= 500) return 2;
-            return 0.4; // Jarak jauh, hemat energi
+            if (distance <= 500) return 3;
+            return 2;
         }
 
-        // **Jika energi bot mulai menipis, lebih hemat energi**
         if (Energy > 20)
         {
             if (distance <= 50) return 3;
             if (distance <= 100) return 2;
-            if (distance <= 500) return 1;
-            return 0.4; // Jarak jauh, sangat hemat energi
+            return 1;
         }
 
-        // **Jika energi sangat rendah, hanya tembak jika perlu**
         if (Energy > 10)
         {
             if (distance <= 50) return 2;
-            if (distance <= 100) return 1;
-            return 0.2; // Sangat hemat energi
+            return 1;
         }
 
-        // **Jika energi hampir habis, sangat defensif**
-        return 1; // Tidak menembak untuk menghindari eliminasi cepat
+        return 0.5;
+    }
+    private bool IsNearWall(double margin)
+    {
+        double arenaWidth = ArenaWidth;
+        double arenaHeight = ArenaHeight;
+        if (X <= margin || X >= (arenaWidth - margin)) return true;
+        if (Y <= margin || Y >= (arenaHeight - margin)) return true;
+        return false;
+    }
+    private void AvoidWall()
+    {
+        TurnRight(90);
+        Back(100);
     }
 }

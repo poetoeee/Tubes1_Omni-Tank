@@ -1,0 +1,10 @@
+{
+  "name": "Conquest",
+  "version": "1.0",
+  "authors": ["Group60"],
+  "description": "One of the strongest creature in the universe, yet he is so lonely",
+  "homepage": "",
+  "countryCodes": ["us", "id"],
+  "platform": ".Net 6.0",
+  "programmingLang": "C# 10.0"
+}

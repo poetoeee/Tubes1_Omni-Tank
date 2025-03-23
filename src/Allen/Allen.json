@@ -1,0 +1,10 @@
+{
+  "name": "Allen The Alien",
+  "version": "1.0",
+  "authors": ["Group60"],
+  "description": "Strongest Unopan in the universe",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 6.0",
+  "programmingLang": "C# 10.0"
+}

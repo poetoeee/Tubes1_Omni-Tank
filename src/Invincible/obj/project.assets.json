@@ -931,11 +931,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Stima\\Tubes1_13523117\\ContohRoboCode\\Invincible\\Invincible.csproj",
+      "projectUniqueName": "E:\\Stima\\Tubes1_13523117\\Tubes1_Omni-Tank\\src\\Invincible\\Invincible.csproj",
       "projectName": "Invincible",
-      "projectPath": "E:\\Stima\\Tubes1_13523117\\ContohRoboCode\\Invincible\\Invincible.csproj",
+      "projectPath": "E:\\Stima\\Tubes1_13523117\\Tubes1_Omni-Tank\\src\\Invincible\\Invincible.csproj",
       "packagesPath": "C:\\Users\\hp145\\.nuget\\packages\\",
-      "outputPath": "E:\\Stima\\Tubes1_13523117\\ContohRoboCode\\Invincible\\obj\\",
+      "outputPath": "E:\\Stima\\Tubes1_13523117\\Tubes1_Omni-Tank\\src\\Invincible\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp145\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -956,13 +956,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net6.0": {
@@ -993,7 +987,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.428\\RuntimeIdentifierGraph.json"
       }
     }
   }
