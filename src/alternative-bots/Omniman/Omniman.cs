@@ -65,9 +65,18 @@ public class Omniman : Bot
     {
         TurnGunLeft(GunBearingTo(e.X, e.Y));
         var distance = DistanceTo(e.X, e.Y);
-        if (distance < 500){
+
+        if (distance < 100)
+        {
+            TurnToFaceTarget(e.X, e.Y);
+            Forward(distance + 5);
+        }
+        else if (distance < 500)
+        {
             Fire(3);
-        }else{
+        }
+        else
+        {
             Fire(2);
         }
     }
