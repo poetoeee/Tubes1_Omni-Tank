@@ -1,0 +1,10 @@
+{
+  "name": "Omniman",
+  "version": "1.0",
+  "authors": ["Group60"],
+  "description": "Global strongest hero",
+  "homepage": "",
+  "countryCodes": ["id", "us"],
+  "platform": ".Net 6.0",
+  "programmingLang": "C# 10.0"
+}

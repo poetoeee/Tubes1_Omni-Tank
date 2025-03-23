@@ -1,8 +1,8 @@
 {
   "name": "Invincible",
   "version": "1.0",
-  "authors": ["Ferdin"],
-  "description": "An Invincible robot that combine spin and ram attack type, still losing against wall and ram-fire typed robot",
+  "authors":["Group60"],
+  "description": "He needs to be [Title Card]",
   "homepage": "",
   "countryCodes": ["id"],
   "platform": ".Net 6.0",
