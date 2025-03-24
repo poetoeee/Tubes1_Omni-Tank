@@ -65,20 +65,10 @@ Bot sederhana & efisien. Bergerak memutar dan selalu memindai. Menembak dengan k
 
 ---
 
-## Cara Menjalankan
-
-Masuk ke folder bot, lalu:
-```bash
-java -jar robocode-tankroyale-gui-0.30.0.jar
-```
-
-
-> Gantilah `BotName` dengan nama bot yang ingin dijalankan (Conquest, Omniman, Invincible, Allen)
-
----
-
 ## Referensi
 - [RoboCode Documentation – Robowiki](https://robowiki.net/wiki/Robocode_Documentation)
 - [Tank Royale Docs](https://robocode-dev.github.io/tank-royale/)
-
+- [Slide Kuliah IF2211-Strategi Algoritma, Algoritma Greedy (Bagian 1)](https://informatika.stei.itb.ac.id/~rinaldi.munir/Stmik/2024-2025/04-Algoritma-Greedy-(2025)-Bag1.pdf)
+- [Slide Kuliah IF2211-Strategi Algoritma, Algoritma Greedy (Bagian 2)](https://informatika.stei.itb.ac.id/~rinaldi.munir/Stmik/2024-2025/04-Algoritma-Greedy-(2025)-Bag2.pdf)
+- [Slide Kuliah IF2211-Strategi Algoritma, Algoritma Greedy (Bagian 3)](https://informatika.stei.itb.ac.id/~rinaldi.munir/Stmik/2024-2025/04-Algoritma-Greedy-(2025)-Bag3.pdf)
 ---
