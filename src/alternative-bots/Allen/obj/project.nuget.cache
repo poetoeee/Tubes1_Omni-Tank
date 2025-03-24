@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Smj7MD4TDtcD5CpKc0mib/Z/6UORyvm4bmFhnybk7ZOiWw46qZG00LscoJu0HrDs3OdUjk9RZbGtgLDRAvUvxg==",
+  "dgSpecHash": "Jon83R+AEb0FOhILl+p8HLwcFRl/qT0tfaTaOdAv7z7qQ0lOzZJy0VW0Y/awN7uxyTbJJhxHB6qECpAfOSUSGA==",
   "success": true,
-  "projectFilePath": "E:\\Stima\\Tubes1_13523117\\Tubes1_Omni-Tank\\src\\Allen\\Allen.csproj",
+  "projectFilePath": "E:\\Stima\\Tubes1_13523117\\Tubes1_Omni-Tank\\src\\alternative-bots\\Allen\\Allen.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp145\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",
     "C:\\Users\\hp145\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

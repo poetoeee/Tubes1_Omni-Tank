@@ -931,11 +931,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Stima\\Tubes1_13523117\\Tubes1_Omni-Tank\\src\\Allen\\Allen.csproj",
+      "projectUniqueName": "E:\\Stima\\Tubes1_13523117\\Tubes1_Omni-Tank\\src\\alternative-bots\\Allen\\Allen.csproj",
       "projectName": "Allen",
-      "projectPath": "E:\\Stima\\Tubes1_13523117\\Tubes1_Omni-Tank\\src\\Allen\\Allen.csproj",
+      "projectPath": "E:\\Stima\\Tubes1_13523117\\Tubes1_Omni-Tank\\src\\alternative-bots\\Allen\\Allen.csproj",
       "packagesPath": "C:\\Users\\hp145\\.nuget\\packages\\",
-      "outputPath": "E:\\Stima\\Tubes1_13523117\\Tubes1_Omni-Tank\\src\\Allen\\obj\\",
+      "outputPath": "E:\\Stima\\Tubes1_13523117\\Tubes1_Omni-Tank\\src\\alternative-bots\\Allen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp145\\AppData\\Roaming\\NuGet\\NuGet.Config"
