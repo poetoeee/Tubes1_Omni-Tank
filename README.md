@@ -1,7 +1,7 @@
-# Omni-Tank Bots - Tubes 1 IF2211 2025
-**Kelompok 60 - Strategi Algoritma**
+# Tubes 1 IF2211 - Strategi Algoritma
+**Kelompok 60 - Omni-Tank**
 
-> Repository ini berisi implementasi 4 bot C# Robocode Tank Royale dengan pendekatan strategi Greedy yang berbeda, dikembangkan dalam rangka Tugas Besar 1 IF2211 Strategi Algoritma 2025 di Institut Teknologi Bandung.
+> Repository ini berisi implementasi 4 bot C# Robocode Tank Royale dengan pendekatan strategi Greedy yang berbeda.
 
 ---
 
@@ -37,7 +37,7 @@ Tubes1_Omni-Tank/
 Bot defensif yang bergerak spiral untuk menghindari peluru, memindai musuh terus-menerus, dan memperkirakan posisi musuh berdasarkan kecepatan & arah. Menyesuaikan kekuatan tembakan berdasarkan jarak.
 
 ###  Omniman
-Bot agresif & brutal: akan menabrak musuh pada jarak dekat sambil menembak kuat. Jika musuh jauh, akan menembak hemat untuk efisiensi. Cocok untuk 1 vs 1 atau arena kecil.
+Bot yang agresif dan brutal, bot yang akan menabrak musuh pada jarak dekat sambil menembak kuat. Jika musuh jauh, akan menembak hemat untuk efisiensi. Cocok untuk 1 vs 1 atau arena kecil.
 
 ###  Invincible
 Bot yang mengejar musuh dan melakukan ramming. Menyesuaikan kekuatan tembakan berdasarkan jarak & energi bot sendiri. Memiliki sistem penghindaran tembok otomatis.
