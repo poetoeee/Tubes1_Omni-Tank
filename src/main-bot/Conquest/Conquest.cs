@@ -7,8 +7,7 @@ public class Conquest : Bot
 {
     double lastEnemyX, lastEnemyY;
     double lastEnemyVelocity;
-    double lastEnemyDistance = 0;
-    int movementDirection = 1; 
+    double lastEnemyDistance = 0; 
 
     static void Main()
     {
